@@ -1,9 +1,14 @@
 import * as THREE from 'three';
-import * as BufferGeometryUtils from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 // import {GLTFLoader} from 'GLTFLoader';
 // import {renderer, camera, runtime, world, universe, physics, ui, rig, app, scene, appManager, popovers, crypto, constants} from 'app';
 import metaversefile from 'metaversefile';
-const {useFrame, useLocalPlayer/* , useUi*/} = metaversefile;
+const {useFrame, useLocalPlayer, useThreeUtils} = metaversefile;
+
+//
+
+const {BufferGeometryUtils} = useThreeUtils();
+
+//
 
 const localBox = new THREE.Box3();
 
